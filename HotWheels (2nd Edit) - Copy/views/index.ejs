@@ -1,0 +1,114 @@
+  <main>
+    
+    <!-- Post Something Section -->
+<section id="user-post">
+   <div class="profile-card">
+    <img src="/img/carprof.jpg" alt="User Avatar" class="profile-avatar" />
+    <div class="profile-info">
+      
+    </div>
+  </div>
+  
+  <h2>
+    <img src="/img/hotwheels-favicon.png" alt="hotwheels-favicon" class="inline-icon" />
+    Share Your Hot Wheels Moment
+  </h2>
+  <form id="post-form" action="/posts" method="POST" enctype="multipart/form-data">
+    <input
+      type="text"
+      name="title"
+      placeholder="Write Something..."
+      required
+    />
+    <textarea
+      name="content"
+      placeholder="Description..."
+      required
+    ></textarea>
+
+    <!-- Custom File Upload -->
+    <label for="post-image" class="custom-upload">
+      <span>📷 <strong>UPLOAD IMAGE</strong></span>
+    </label>
+    <input
+      type="file"
+      name="image"
+      id="post-image"
+      accept="image/*"
+      hidden
+    />
+
+    <button type="submit">🔥 Post</button>
+  </form>
+</section>
+
+
+
+
+</form>
+  <div id="user-posts"></div>
+</section>
+    <div id="collections"> 
+    <section class="gallery">
+    <article class="card">
+  <img src="/img/Hot Wheels car toy porshe 917 blue gulf 2018 toy car.jpg" alt="Item 1" />
+  <div class="card-content">
+    <h2>Hot Wheels car toy porshe 917 blue gulf 2018 toy car</h2>
+    <div class="actions">
+      <button class="like-btn">❤️ <span class="like-count">40</span></button>
+      <ul class="comment-list">
+  <li><strong>HotBot:</strong> This Porsche 917 is a legend! 🔥</li>
+  <li><strong>CollectorAI:</strong> Love the Gulf livery on this one 😍</li>
+</ul>
+    <div class="comments">
+      <input type="text" placeholder="Add a comment..." class="comment-input" />
+      <button class="comment-btn">Post</button>
+      <ul class="comment-list"></ul>
+    </div>
+  </div>
+
+      <article class="card">
+  <img src="/img/shelbycobra.jpg" alt="Item 1" />
+  <div class="card-content">
+    <h2>HotWheels Shelby Cobra.
+        #HotWheels
+        #ShelbyCobra
+        #Collection
+    </h2>
+    <div class="actions">
+      <button class="like-btn">❤️ <span class="like-count">15</span></button>
+    </div>
+      <ul class="comment-list">
+  <li><strong>Thehotonerod:</strong> Shelby Cobra – muscle and style in one package 💪</li>
+  <li><strong>wheelywonk99:</strong> One of my favorites from the classic collection.</li>
+  </ul>
+  <div class="comments">
+    <input type="text" placeholder="Add a comment..." class="comment-input" />
+    <button class="comment-btn">Post</button>
+    <ul class="comment-list"></ul>
+    </div>
+
+      <article class="card">
+  <img src="/img/silvia s15.jpg" alt="Item 1" />
+  <div class="card-content">
+    <h2>Silvia S15 Japanese Style Wide Bodykit
+    </h2>
+    <div class="actions">
+      <button class="like-btn">❤️ <span class="like-count">23</span></button>
+    </div>
+      <ul class="comment-list">
+  <li><strong>ThatJdmDude:</strong> That dang wide bodykit is sick!!</li>
+  <li><strong>UnutterlyGodly:</strong> do they have plain version of this?</li>
+  <li><strong>88ramraptors:</strong> for a toy, this looks good for an actual build of S15</li> 
+  </ul>
+  <div class="comments">
+    <input type="text" placeholder="Add a comment..." class="comment-input" />
+    <button class="comment-btn">Post</button>
+
+      <ul class="comment-list"></ul>
+    </div>
+  </div>
+</article>
+
+    </section>
+  </main>

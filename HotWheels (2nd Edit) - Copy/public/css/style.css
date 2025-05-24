@@ -1,0 +1,653 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background: black;
+  color: white;
+}
+
+.top-bar {
+  height: 20px;
+  background: red;
+}
+
+.hero {
+  background-image: url(/img/hotwheels-wallpaper.jpg);
+  background-position: center;
+  text-align: center;
+  padding: 40px 0;
+  position: relative;
+}
+
+.logo {
+  height: 210px; 
+  vertical-align: middle;
+}
+
+.mattel-logo {
+  max-width: 60px;
+  width: 15%;
+  position: absolute;
+  top: 40px;
+}
+
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-top: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+.card h2 {
+  font-size: 1rem;
+  padding: 10px;
+  color: #fff;
+}
+
+footer {
+  background: white;
+  color: black;
+  padding: 30px;
+}
+
+.footer-content {
+  max-width: 400px;
+  margin: 20px;
+  align-items: right;
+}
+
+.card-content {
+  padding: 10px;
+  text-align: left;
+}
+
+.actions {
+  margin: 10px 0;
+}
+
+.like-btn {
+  background: none;
+  border: none;
+  color: #ff5252;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.comment-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.comment-btn {
+  margin-top: 5px;
+  padding: 6px 10px;
+  border: none;
+  background-color: #6200ea;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comment-list {
+  list-style: none;
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.comment-list li {
+  background: #2e2e2e;
+  padding: 6px;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+.comment-btn {
+  background-color: #ff4500; 
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.comment-btn:hover {
+  background-color: #e03d00; 
+}
+
+.navbar {
+  background-color: #1a1a1a;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 16px 16px;
+  border-radius: 7px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: red;
+  color: white;
+  height: 20px;
+  width: auto;
+}
+
+.hotwheelsabout {
+  height: 15px;
+  width: auto;
+}
+/* 🔍 Themed Search Bar */
+#search-form {
+  display: flex;
+  align-items: center;
+  background: #ff4d00;
+  padding: 5px;
+  border-radius: 999px;
+  margin-left: auto;
+  gap: 5px;
+}
+#search-input {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 999px;
+  outline: none;
+  width: 180px;
+}
+#search-form button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* 📝 User Post Form */
+#user-post {
+  background: #fefefe;
+  padding: 1.5rem;
+  border-top: 3px solid #ff4d00;
+}
+#user-post h2 {
+  color: #d32000;
+}
+#post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#post-form input[type="text"],
+#post-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-family: inherit;
+}
+#post-form input[type="file"] {
+  border: none;
+}
+#post-form button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #ff4d00;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.user-post {
+  margin-top: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-left: 5px solid #ff4d00;
+  padding: 15px;
+  border-radius: 8px;
+}
+.user-post h3 {
+  margin: 0 0 5px 0;
+  color: #222;
+}
+.post-image {
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+/* 🎯 Hot Wheels Themed User Post Section */
+#user-post {
+  background: linear-gradient(135deg, #ff4d00 0%, #ffc107 100%);
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 15px;
+  max-width: 700px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  color: #1a1a1a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#user-post h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px #000;
+  font-size: 1.8rem;
+}
+
+#post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#post-form input[type="text"],
+#post-form textarea {
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 2px solid #ff9800;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #fff9f0;
+  color: #333;
+  resize: vertical;
+  outline: none;
+}
+
+#post-form input[type="file"] {
+  background: #fff;
+  border: none;
+  font-size: 1rem;
+}
+
+#post-form button {
+  align-self: flex-end;
+  padding: 12px 24px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#post-form button:hover {
+  background-color: #333;
+}
+
+/* 🔥 User Posts Display */
+.user-post {
+  margin-top: 2rem;
+  background-color: #fff;
+  border-left: 5px solid #ff4d00;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 77, 0, 0.3);
+}
+
+.user-post h3 {
+  color: #d32000;
+  margin-bottom: 0.5rem;
+}
+
+.user-post p {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.user-post img.post-image {
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 2px solid #ff9800;
+}
+.inline-icon {
+  height: 120px;           /* Match text size */
+  width: auto;           /* Keep aspect ratio */
+  vertical-align: middle; /* Align with text */
+  margin-right: 0.4em;    /* Space between image and text */
+}
+#user-profile {
+  margin: 2em auto;
+  padding: 1em;
+  background: #111;
+  color: white;
+  border-radius: 12px;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.profile-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #ff0000; /* Hot Wheels red */
+  object-fit: cover;
+}
+
+.profile-info h3 {
+  margin: 0;
+  color: #FFD700; /* Hot Wheels yellow */
+  font-size: 1.2em;
+}
+
+.profile-info p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #ccc;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111;
+  padding: 0.5em 1em;
+  color: white;
+  flex-wrap: wrap;
+}
+
+#search-form {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 1em;
+}
+
+#search-input {
+  padding: 0.3em;
+  border-radius: 6px 0 0 6px;
+  border: none;
+  outline: none;
+}
+
+#search-form button {
+  padding: 0.3em 0.6em;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.user-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: white;
+}
+
+.nav-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff0000;
+}
+
+.username {
+  font-size: 0.95em;
+  color: #FFD700;
+}
+.user-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-left: 1em;
+}
+
+.nav-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff0000;
+}
+
+.username {
+  font-size: 0.95em;
+  color: #FFD700;
+}
+
+.auth-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.4em 0.8em;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.auth-button:hover {
+  background-color: #cc0000;
+}
+    main.about-content {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    main.about-content h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    main.about-content p {
+      margin-bottom: 1.25rem;
+      font-size: 1.1rem;
+    }
+    main.about-content img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 2rem auto;
+    }
+    /* Container holding the entire search bar */
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: #f2f2f2; /* Light background to separate it */
+}
+
+/* Inner container for centering */
+.searchBar .container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Search form layout */
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+/* Search input field */
+.search-form input[type="search"] {
+  padding: 0.6rem 1rem;
+  border: 2px solid #e84c3d; /* Hot Wheels red/orange */
+  border-radius: 20px;
+  font-size: 1rem;
+  width: 60%;
+  max-width: 400px;
+  transition: all 0.3s ease;
+}
+
+.search-form input[type="search"]:focus {
+  outline: none;
+  border-color: #ff6600;
+  box-shadow: 0 0 8px rgba(255, 102, 0, 0.3);
+}
+
+/* Search button */
+.search-form button {
+  background-color: #e84c3d;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+  background-color: #ff5722;
+}
+
+/* Optional - make it responsive on small screens */
+@media (max-width: 768px) {
+  .search-form {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .search-form input[type="search"] {
+    width: 90%;
+  }
+}
+/* Navbar flex container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1.5rem;
+  background-color: #fff;
+  border-bottom: 2px solid #e84c3d;
+  flex-wrap: wrap;
+}
+
+/* Left-side nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Right-aligned search bar */
+.searchBar {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.search-form input[type="search"] {
+  padding: 0.4rem 0.8rem;
+  border: 2px solid #e84c3d;
+  border-radius: 20px;
+  width: 180px;
+  transition: 0.3s ease;
+}
+
+.search-form input[type="search"]:focus {
+  outline: none;
+  border-color: #ff6600;
+  box-shadow: 0 0 8px rgba(255, 102, 0, 0.3);
+}
+
+.search-form button {
+  background-color: #e84c3d;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #ff5722;
+}
+
+/* User nav */
+.user-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.nav-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.auth-button {
+  background-color: #e84c3d;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+
+
+

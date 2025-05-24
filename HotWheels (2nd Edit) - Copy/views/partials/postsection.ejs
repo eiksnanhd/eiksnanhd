@@ -1,0 +1,28 @@
+<main>
+  <section id="user-profile">
+    <div class="profile-card">
+      <img src="/img/default-avatar.png" alt="User Avatar" class="profile-avatar" />
+      <div class="profile-info">
+        <h3>@HotWheelFan99</h3>
+        <p>Collector • Racer • Dreamer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Post Something Section -->
+  <section id="user-post">
+    <h2><img src="/img/hotwheels-favicon.png" alt="hotwheels-favicon" class="inline-icon" /> Share Your Hot Wheels Moment</h2>
+    <form id="post-form">
+      <input type="text" id="post-title" placeholder="Write Something..." required />
+      <textarea id="post-content" placeholder="Description..." required></textarea>
+
+      <!-- Custom File Upload -->
+      <label for="post-image" class="custom-upload">
+        <span>📷 <strong>UPLOAD IMAGE</strong></span>
+      </label>
+      <input type="file" id="post-image" accept="image/*" hidden />
+
+      <button type="submit">🔥 Post</button>
+    </form>
+  </section>
+</main>
